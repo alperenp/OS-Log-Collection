@@ -51,3 +51,5 @@ In the sample, previously configures nxlog configuration is defined under input 
 
 4.  Open command line under current directory (~\logstash-6.1.3\bin)
 5.  Execute the command `logstash.bat -f logstash-simple.conf`
+
+Note: if you get `RabbitMQ connection error, will retry. {:error_message=>"Connection to 130.149.232.170:5672 refused", :exception=>"MarchHare::ConnectionRefused"}`, try to make an inbound rule in rabbitmq firewall for 5672 port
