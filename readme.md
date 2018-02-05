@@ -43,6 +43,7 @@ In the sample, eventlogs are written under the file (c:\nxlogOutput\nxlog.txt) i
 1.  Go to the logstash/bin directory (~\logstash-6.1.3\bin)
 2.  Create a config file named logstash-simple.conf
 3.  Fill the logstash config file. Here is an example.
+
 ![logstash.conf](/pics/logstashConf.PNG)
 
 In the sample, previously configures nxlog configuration is defined under input tag. Under filter, each log is added with the fields of "SourceIp" and "id". Finally logs are forwarded to rabbitMQ configured under output tag.
