@@ -1,3 +1,5 @@
+This document is created in order to present a how-to collect OS logs via using nxlog -> logstash -> rabbitmq setup.
+
 ## Pre-requirements
 *  Java8+ (`sudo apt-get install default-jdk`)
 *  [Nxlog](https://nxlog.co/products/nxlog-community-edition/download)
