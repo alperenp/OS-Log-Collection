@@ -6,7 +6,7 @@
 
 
 ## Setup
-This Setup instructions run on Windows.
+This Setup instructions are tested on Windows machine.
 
 1.  Install Java to your host machine
 2.  Install nxlog to your host machine
