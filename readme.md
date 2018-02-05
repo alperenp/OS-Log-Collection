@@ -14,8 +14,7 @@ This Setup instructions run on Windows.
 4.  Download Logstash and extract folder on your host machine
 
 # RabbitMQ
-1.  Create admin account in rabbitMQ in order to be able to create queues
-You may optionally create accounts for different connections in order to not get authentication failures
+1.  Create admin account in rabbitMQ in order to be able to create queues. You may optionally create accounts for different connections in order to not get authentication failures
 2.  Create queue used in named as "rawLogs"
 ![rabbitQueues](/pics/rabbitQueues.PNG)
 
