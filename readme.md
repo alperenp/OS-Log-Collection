@@ -22,19 +22,19 @@ You may optionally create accounts for different connections in order to not get
 3.  Create an exchange in rabbitMQ in order to receive logs from logstash
 <br>
 3.a.  Call this exchange as "logstash".
-<br>
+
 ![exchangeCreate](/pics/exchangeCreate.PNG)
 
 3.b.  Then bind this exchange into "rawLogs" queue. Now You can send logs from logstash and rabbit will direct logs to "rawLogs".
-<br>
+
 ![exchangeBindPNG](/pics/exchangeBindPNG.PNG)
 
 # Nxlog
 [Configuration Sample](https://nxlog.co/docs/elasticsearch-kibana/using-nxlog-with-elasticsearch-and-kibana.html)
 1.  Configure nxlog.conf file(under C:\Program Files\nxlog\conf\ )  Here is a sample
-<br>
+
 ![nxlog.conf](/pics/nxlogConf.PNG)
-<br>
+
 In the sample, eventlogs are written under the file (c:\nxlogOutput\nxlog.txt) in Route 1. Route 2 reads input from this file and currently occuring windows logs. Route 2 forwards these two inputs to logstash under logstash defined in "eventlog_outLogStash".
 
 2.  One can start-stop nxlog service under windows services
@@ -43,9 +43,8 @@ In the sample, eventlogs are written under the file (c:\nxlogOutput\nxlog.txt) i
 1.  Go to the logstash/bin directory (~\logstash-6.1.3\bin)
 2.  Create a config file named logstash-simple.conf
 3.  Fill the logstash config file. Here is an example.
-<br>
 ![logstash.conf](/pics/logstashConf.PNG)
-<br>
+
 In the sample, previously configures nxlog configuration is defined under input tag. Under filter, each log is added with the fields of "SourceIp" and "id". Finally logs are forwarded to rabbitMQ configured under output tag.
 
 4.  Open command line under current directory (~\logstash-6.1.3\bin)
