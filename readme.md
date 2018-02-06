@@ -5,6 +5,7 @@ This document is created in order to present a how-to collect OS logs via using 
 *  [Nxlog](https://nxlog.co/products/nxlog-community-edition/download)
 *  [LogStash 6.1+](https://www.elastic.co/downloads/logstash)
 *  RabbitMQ 3.7+ ([linux](https://tecadmin.net/install-rabbitmq-server-on-ubuntu/#) [windows](https://cmatskas.com/getting-started-with-rabbitmq-on-windows/))
+[Here is a nice util for rabbitMQ queue dump](https://github.com/dubek/rabbitmq-dump-queue)
 
 
 ## Setup
