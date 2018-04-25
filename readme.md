@@ -41,6 +41,8 @@ In the sample, eventlogs are written under the file (c:\nxlogOutput\nxlog.txt) i
 
 2.  One can start-stop nxlog service under windows services
 
+Note: For more details please see [user guide](/nxlog-user-guide.pdf)
+
 # LogStash
 1.  Go to the logstash/bin directory (~\logstash-6.1.3\bin)
 2.  Create a config file named logstash-simple.conf
